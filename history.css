@@ -1,0 +1,86 @@
+.main{
+	display:block;
+	--primary:#EEE1C6;
+	--secondary:#008231;
+	animation: all ease 1s;
+}
+.maintext{
+	width:80%;
+	text-align:center;
+	margin:0 auto;
+	color:#EEE1C6;
+	font-size:1.5rem;
+	font-weight:100;
+}
+.maincontent{
+	text-align:center;
+}
+.maincontent img{
+	display:inline-block;
+	width:35%;
+	border-radius:10px;
+	transition:scale 0.55s,border-radius 0.75s;
+	margin:0 1rem;
+}
+.maincontent img:hover{
+	scale:1.05;
+	border-radius:1px;
+	transition:scale 0.75s,border-radius 0.75s;
+}
+.maincontent.fullframe img{
+	vertical-align:middle;
+}
+.maincontent.headshot img{
+	vertical-align:bottom;
+}
+.maincontent.video video{
+	width:44%;
+	display:inline-block;
+	border-radius:10px;
+	margin:0 1rem;
+	color:#EEE1C6;
+	font-size:1.5rem;
+	font-weight:100;
+	text-align:center;
+}
+.buttonholder{
+	margin:1rem;
+	text-align:center;
+}
+.buttonholder button{
+	font-size:1.5rem;
+	background-color:rgba(0,0,0,0.25);
+	color:#008231;
+	border:none;
+	border-radius:0.313rem;
+	font-family:Capsuula,sans-serif;
+	z-index:0;
+	transition:transform ease 0.5s,background-color 0.5s;
+}
+.buttonholder button:hover{
+	background-color:#EEE1C6;
+	border-radius:0.313rem;
+	transform:scale3d(1.15,1.15,1);
+	transition:transform ease 0.5s,background-color 0.5s;
+}
+#quiz{
+	width:50%;
+	margin:0 auto;
+	text-align:center;
+}
+fieldset{
+	border:none;
+	margin:1rem 0;
+}
+legend,label{
+	color:#eee1c6;
+	font-weight:100;
+	text-align:inherit;
+}
+legend{
+	font-size:1.5rem;
+}
+label{
+	font-size:1rem;
+	margin-right:0.5rem;
+}

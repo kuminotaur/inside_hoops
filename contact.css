@@ -1,0 +1,105 @@
+.main{
+	display:block;
+    text-align:center;
+}
+.formholder{
+	text-align:center;
+}
+form{
+	display:inline-block;
+	text-align:left;
+	margin:0 auto;
+}
+.enter{
+	position:relative;
+	text-align:center;
+}
+input[type=text]{
+	color:#EEE1C6;
+	background:transparent;
+	border:none;
+	border-bottom:solid 1px #008231;
+	padding:0.417rem;
+	transition:padding ease 0.25s;
+}
+input[type=text]:placeholder-shown+label{
+	color:#008231;
+	font-size:1.167rem;
+	left:0.417rem;
+	top:0.417rem;
+	transform:translateX(275%);
+}
+label,input[type=text]:focus+label{
+	color:#EEE1C6;
+	font-size:1rem;
+	pointer-events:none;
+	position:absolute;
+	left:0.167rem;
+	top:0.167rem;
+	transition:top 0.25s,left 0.25s,font-size 0.25s;
+	transform:translateX(275%);
+}
+input[type=text]::placeholder{
+	color:transparent;
+}
+input[type=text]:focus,input[type=text]:not(:placeholder-shown){
+	border-bottom:solid 0.063rem #EEE1C6;
+	outline:none;
+	padding:1.667rem 0.417rem 0.417rem;
+}
+table{
+	margin:0 auto;
+}
+td{
+	width:30%;
+	text-align:center;
+	color:#EEE1C6;
+}
+input[type=radio]{
+	color:#008231;
+}
+textarea{
+	border:1px solid #008231;
+	border-radius:10px;
+	outline:none;
+	color:#EEE1C6;
+	background-color:#00471b;
+	transition:border ease 0.75s;
+}
+textarea:focus{
+	border:1px solid #EEE1C6;
+}
+h2{
+	text-align:center;
+	margin:0 auto;
+	color:#EEE1C6;
+	font-size:2rem;
+	font-weight:100;
+}
+.buttonholder{
+	margin:1rem;
+	text-align:center;
+}
+@font-face {
+	font-family: 'Capsuula';
+	font-style: normal;
+	font-weight: normal;
+	src:local('Capsuula'),url('./assets/Capsuula.woff') format('woff');
+}
+.buttonholder input{
+	font-size:1rem;
+	background-color:rgba(0,0,0,0.25);
+	color:#008231;
+	border:none;
+	border-radius:0.313rem;
+	font-family:Capsuula,sans-serif;
+	z-index:0;
+	transition:transform ease 0.5s,background-color 0.5s;
+	margin:0 0.5rem;
+}
+.buttonholder input:hover{
+	background-color:#eee1c6;
+	border-radius:0.313rem;
+	transform:scale3d(1.15,1.15,1);
+	transition:transform ease 0.5s,background-color 0.5s;
+}

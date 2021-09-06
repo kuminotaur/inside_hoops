@@ -1,0 +1,29 @@
+.main{
+	display:table;
+}
+.maincontent,.maintext{
+	display:table-cell;
+	padding:1rem;
+}
+.maincontent{
+	width:60%
+}
+.maincontent img{
+	width:100%;
+	text-align:center;
+	border-radius:10px;
+	transition:scale 0.75s,border-radius 0.75s;
+}
+.maincontent img:hover{
+	scale:1.05;
+	border-radius:1px;
+	transition:scale 0.75s,border-radius 0.75s;
+}
+.maintext{
+	width:40%;
+	color:#EEE1C6;
+	font-size:1.5rem;
+	font-weight:100;
+	vertical-align:middle;
+	text-align:right;
+}

@@ -1,0 +1,56 @@
+.main{
+	display:block;
+	opacity:1;
+}
+.main p{
+	text-align:center;
+	margin:0 auto;
+	color:#EEE1C6;
+	font-size:2rem;
+	font-weight:100;
+}
+.main table{
+	width:60%;
+	text-align:center;
+	margin:0 auto;
+	color:#EEE1C6;
+	font-size:1.2rem;
+	font-weight:100;
+	border:1px solid #EEE1C6;
+	border-radius:10px;
+}
+.main th,td{
+	width:33%;
+}
+.buttonholder{
+	margin:1rem;
+	text-align:center;
+}
+@font-face {
+	font-family: 'Capsuula';
+	font-style: normal;
+	font-weight: normal;
+	src:local('Capsuula'),url('./assets/Capsuula.woff') format('woff');
+}
+.buttonholder button{
+	font-size:1rem;
+	background-color:rgba(0,0,0,0.25);
+	color:#008231;
+	border:none;
+	border-radius:0.313rem;
+	font-family:Capsuula,sans-serif;
+	z-index:0;
+	transition:transform ease 0.5s,background-color 0.5s,color 0.5s;
+	margin:0 0.5rem;
+}
+.buttonholder button:hover:enabled{
+	background-color:#EEE1C6;
+	border-radius:0.313rem;
+	transform:scale3d(1.15,1.15,1);
+	transition:transform ease 0.5s,background-color 0.5s;
+}
+.buttonholder button:disabled{
+	background-color:rgba(0,0,0,0.45);
+	color:#004119;
+	transition:background-color 0.5s,color 0.5s,transform ease 0.5s;
+}

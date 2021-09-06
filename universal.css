@@ -1,0 +1,91 @@
+.header{
+	display:inline-block;
+	position:relative;
+ 	left:50%;
+ 	transform:translateX(-50%);
+}
+h1{
+	display:inline-block;
+	color:#EEE1C6;
+	font-weight:200;
+	font-size:4rem;
+	margin:0.5rem;
+	vertical-align:middle;
+}
+svg{
+	fill:#EEE1C6;
+	vertical-align:middle;
+	transition:width 1s,height 1s;
+}
+.header:hover svg{
+	width:72px;
+	height:74px;
+	transition:width ease 1s,height ease 1s;
+}
+.navbar{
+	text-align:center;
+	margin:1rem;
+}
+.navbar a{
+	display:inline-block;
+	color:#EEE1C6;
+	background-color:rgba(0,0,0,0.25);
+	padding:0.5rem;
+	text-decoration:none;
+	margin:.5rem -.05rem;
+	padding:.5rem 1rem;
+	font-size:2rem;
+	font-weight:200;
+	vertical-align:middle;
+	z-index:0;
+	transition:transform 0.5s,color 0.5s,background-color 0.5s;
+}
+.navbar a[id='curr']{
+	text-decoration:overline;
+	transition:transform ease 0.5s,color 0.5s,background-color 0.5s, text-decoration ease 0.5s;
+}
+.navbar a:hover{
+	color:#00471B;
+	background:#EEE1C6;
+	transform:scale3d(1.15,1.15,1);
+	text-decoration:none;
+	transition:transform ease 0.5s,color 0.5s,background-color 0.5s, text-decoration ease 0.5s;
+}
+.navbar a:first-child{
+	border-top-left-radius:7.5px;
+	border-bottom-left-radius:7.5px;
+}
+.navbar a:last-child{
+	border-top-right-radius:7.5px;
+	border-bottom-right-radius:7.5px;
+}
+.main{
+	margin-bottom:2rem;
+}
+footer{
+	color:#EEE1C6;
+	text-align:center;
+	font-size:0.75rem;
+	font-weight:200;
+	margin-bottom:1.75rem;
+}
+@keyframes launch{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+@font-face {
+	font-family: 'Capsuula';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Capsuula'), url('./assets/Capsuula.woff') format('woff');
+}
+body{
+	background-color:#00471B;
+	font-family:Capsuula,sans-serif;
+	animation:launch ease 1.5s;
+	margin-bottom:50px;
+}
